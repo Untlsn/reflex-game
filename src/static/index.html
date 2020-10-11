@@ -1,17 +1,36 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-    <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Reflex</title>
     <link rel="stylesheet" href="style.css">
-    </head>
-
-    <body>
-        <h1>Reflex Game</h1>
-        <script src="bundle.js"></script>
-    </body>
-
+</head>
+<body>
+    <header class="top-bar">
+        <div class="top-bar__left-side">
+            <div class="top-bar__bar top-bar__bar--life">
+                Zycia:<span class="js-life">3</span>
+            </div>
+            <div class="top-bar__bar top-bar__bar--score">
+                Punkty:<span class="js-score">0</span>
+            </div>
+        </div>
+        <div class="top-bar__title">Reflex</div>
+        <div class="topbar__bar top-bar__bar--time">
+            Czas<span class="js-time">60</span>sek
+        </div>
+    </header>
+    <main class="playground">
+        <div class="playground__grid playground__grid--white">
+            <div class="playground__grid playground__grid--green js-grid"></div>
+        </div>
+        <div class="playground__control-buttons">
+            <div class="playground__button playground__button--start js-start"></div>
+            <div class="playground__button playground__button--reset js-reset"></div>
+        </div>
+    </main>
+    <script src="bundle.js"></script>
+ </body>
 </html>
